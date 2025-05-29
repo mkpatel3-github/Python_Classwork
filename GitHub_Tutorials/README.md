@@ -15,37 +15,25 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 
 ## Create a New Folder and Add Files
 
-### On Windows Command Prompt
-
-cd Python_Classwork
-mkdir GitHub_Tutorials
-cd GitHub_Tutorials
-echo "Getting Started with GitHub" > README.md
-cd ..
-git add GitHub_Tutorials\README.md
-git commit -m "Getting Started with GitHub"
-git push
+**On Windows Command Prompt**
+- `cd Python_Classwork` &mdash; Change directory to your cloned repository.
+- `mkdir GitHub_Tutorials` &mdash; Create a new folder for tutorials.
+- `cd GitHub_Tutorials` &mdash; Change to newly created directory.
+- `echo "Getting Started with GitHub" > README.md` &mdash; Create a README file with a title.
+- `cd ..` &mdash; Change back to previous directory.
+- `git add ...` &mdash; Stage your new file for commit.
+- `git commit -m "..."` &mdash; Commit your changes with a message.
+- `git push` &mdash; Push your changes to GitHub.
 
 ---
 
 ## Update Existing File
 
-### On Windows Command Prompt
-
-cd Python_Classwork\GitHub_Tutorials
-make needed changes to README.md
-git status
-git add README.md
-git commit -m "Updating README.md with new example"
-git push
-
----
-
-**Explanation:**
-- `cd Python_Classwork` &mdash; Change directory to your cloned repository.
-- `mkdir GitHub_Tutorials` &mdash; Create a new folder for tutorials.
-- `echo Getting Started with GitHub > README.md` &mdash; Create a README file with a title.
-- `git add ...` &mdash; Stage your new file for commit.
+**On Windows Command Prompt**
+- `cd Python_Classwork\GitHub_Tutorials` &mdash; Change directory to your cloned repository.
+- Make needed changes to README.md and save
+- `git status` &mdash; See changed file is visible before pushing to github.
+- `git add ...` &mdash; Stage your Updated  file for commit.
 - `git commit -m "..."` &mdash; Commit your changes with a message.
 - `git push` &mdash; Push your changes to GitHub.
 
