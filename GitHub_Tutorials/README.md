@@ -32,15 +32,17 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 **On Windows Command Prompt**
 - `cd Python_Classwork\GitHub_Tutorials` &mdash; Change directory to your cloned repository.
 - Make needed changes to README.md and save
-- `git status` &mdash; See changed file is visible before pushing to github.
+- `git status` &mdash; See changed file is visible before pushing to github. RED: Changes on your computer and not saved on PR, GREEN: Changes saved to PR
 - `git add ...` &mdash; Stage your Updated  files for commit. (README.md only specified file)
+- `git status` &mdash; See changed file is visible before pushing to github. RED: Changes on your computer and not saved on PR, GREEN: Changes saved to PR
 - `git commit -m "..."` &mdash; Commit your changes with a message.
 - `git push` &mdash; Push your changes to GitHub.
 
 ---
 
 ## Create a Branch
-
+- Why Create a Branch? A branch is your own playground. It lets you try new things, fix mistakes, and get feedback—without risking the main project. When your work is ready, it can be added safely, and the main project is never broken or messy while you’re working.
+- What is the Difference between PR and a Branch? A PR is a way to review and discuss changes, but the branch is what keeps your work separate and safe until it’s ready. The PR only exists because you made your changes on a branch, not on the main branch itself. This combination—branch for safety, PR for review—is the standard and safest way to work with GitHub.
 **On Windows Command Prompt**
 - `git checkout -b "new_tutorial_create_a_branch"` &mdash; Give Branch Name - No Space, use - or _ in name.
 - Make needed changes to files in your branch and save
