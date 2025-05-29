@@ -28,6 +28,19 @@ git push
 
 ---
 
+## Update Existing File
+
+### On Windows Command Prompt
+
+cd Python_Classwork\GitHub_Tutorials
+make needed changes to README.md
+git status
+git add README.md
+git commit -m "Updating README.md with new example"
+git push
+
+---
+
 **Explanation:**
 - `cd Python_Classwork` &mdash; Change directory to your cloned repository.
 - `mkdir GitHub_Tutorials` &mdash; Create a new folder for tutorials.
