@@ -21,7 +21,7 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `cd GitHub_Tutorials` &mdash; Change to newly created directory.
 - `echo "Getting Started with GitHub" > README.md` &mdash; Create a README file with a title.
 - `cd ..` &mdash; Change back to previous directory.
-- `git add ...` &mdash; Stage your new file for commit.
+- `git add ...` &mdash; Stage your new file for commit. (GitHub_Tutorials\README.md only specified file)
 - `git commit -m "..."` &mdash; Commit your changes with a message.
 - `git push` &mdash; Push your changes to GitHub.
 
@@ -33,9 +33,21 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `cd Python_Classwork\GitHub_Tutorials` &mdash; Change directory to your cloned repository.
 - Make needed changes to README.md and save
 - `git status` &mdash; See changed file is visible before pushing to github.
-- `git add ...` &mdash; Stage your Updated  file for commit.
+- `git add ...` &mdash; Stage your Updated  files for commit. (README.md only specified file)
 - `git commit -m "..."` &mdash; Commit your changes with a message.
 - `git push` &mdash; Push your changes to GitHub.
+
+---
+
+## Create a Branch
+
+**On Windows Command Prompt**
+- `git checkout -b "new_tutorial_create_a_branch"` &mdash; Give Branch Name - No Space, use - or _ in name.
+- Make needed changes to files in your branch and save
+- `git add .` &mdash; Stage your Updated  files for commit. [git add .]:All changes in current directory and below, [git add -A]:All changes in the entire repository
+- `git commit -m "Add new Create a Branch Tutorial"` &mdash; Commit your changes with a message.
+- `git push -u origin "new_tutorial_create_a_branch"` &mdash; Push my local branch named new-feature to the remote repository named origin.
+
 
 ---
 
