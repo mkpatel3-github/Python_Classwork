@@ -1,7 +1,15 @@
 # Getting Started with GitHub
-
 This repository contains Python classwork and tutorials for learning and teaching GitHub-based source control.
 
+## Table of Content
+- [Getting Started with GitHub](#getting-started-with-github)
+  - [Table of Content](#table-of-content)
+  - [Cloning the Repository](#cloning-the-repository)
+  - [Create a New Folder and Add Files](#create-a-new-folder-and-add-files)
+  - [Update Existing File](#update-existing-file)
+  - [Create a Branch](#create-a-branch)
+  - [Merge a Branch](#merge-a-branch)
+  - [Switch Between Branches](#switch-between-branches)
 ---
 
 ## Cloning the Repository
@@ -65,7 +73,6 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - You may run into merge conflict where overlapping changes in same file/line conflict with each other. In such case manually resolve conflict and commit changes.
 - `git add <resolved-files>` &mdash; In case of merge conflict: Stage your Updated  files for commit.
 - `git commit -m "..."` &mdash; In case of merge conflict: Commit your changes with a message.
-
 - `git push origin main` &mdash; Update the remote main branch with your merged changes, IMPORTANT: This makes your changes visible to everyone.
 - `git branch -d feature-branch` &mdash; (Optional) Delete your feature branch locally to reduce number of branch maintainance.
 - `git push origin --delete feature-branch` &mdash; (Optional) Delete your feature branch remotely to reduce number of branch maintainance.
@@ -84,22 +91,18 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 
 ---
 
-## Switch Between a Branch
+## Switch Between Branches
 - When you need to switch between Branches to complete your work, you can do so following these commands. Remember to save your work on current branch.
 **On Windows Command Prompt**
 - `git branch` &mdash; List all available local branches
 - `git switch main` &mdash; switch to main or your desired branch. 
-
-- If you have uncommitted changes that conflict with files on main, Git may prevent you from switching branches. In that case, you should either: Commit your changes, Stash them with [git stash], or Discard them if you don’t need them
--`git stash save "meaningful description"` &mdash; Always recommended to save stash with meaningful messaeg
+- If you have uncommitted changes that conflict with files on main, Git may prevent you from switching branches. In that case, you should either: Commit your changes, Stash them with [git stash], or Discard them if you don’t need them.
+-`git stash save "meaningful description"` &mdash; Always recommended to save stash with meaningful message.
 - When you run [git stash save "message"], Git stores your changes in a special local stack and reverts your working directory to the last committed state, making it clean for new tasks.
--`git stash list` &mdash; This shows all your stashes, with the most recent as stash@{0}, the next as stash@{1}, and so on
-- You can later restore your stashed changes with [git stash apply] (which keeps the stash in the stack) or [git stash pop] (which restores and removes the stash from the stack in case only one stash saved)
-- By default, [git stash] stashes only tracked files, but you can include untracked/new files with [git stash -u]
--`git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number
-
- 
-
+-`git stash list` &mdash; This shows all your stashes, with the most recent as stash@{0}, the next as stash@{1}, and so on.
+- You can later restore your stashed changes with [git stash apply] (which keeps the stash in the stack) or [git stash pop] (which restores and removes the stash from the stack in case only one stash saved).
+- By default, [git stash] stashes only tracked files, but you can include untracked/new files with [git stash -u].
+-`git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number.
 
 ---
 ## Markdown Tips
