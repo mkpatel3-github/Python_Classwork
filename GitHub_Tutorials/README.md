@@ -89,6 +89,17 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 -`git checkout -b <your-branch> <sha>'
 -`git push -u origin <your-branch>'
 
+|  | Summary Table | Command Sequence |
+|--|---------------|------------------|
+|Step | Command | Purpose |
+|Update remotes | git fetch origin | Get latest remote changes |
+|Switch to main | git checkout main | Prepare to merge into main |
+|Update local main | git pull origin main | Ensure main is up-to-date |
+|Merge feature branch | git merge feature-branch | Combine your changes into main |
+|Resolve conflicts | Edit files, git add, git commit | If Git can’t merge automatically |
+|Push main to remote | git push origin main | Share merged changes |
+|Delete feature branch | git branch -d feature-branch | Clean up local branches |
+
 ---
 ## Markdown Tips
 
