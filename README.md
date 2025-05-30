@@ -1,6 +1,6 @@
 # Python Classwork for 5/6/7th Grade Students
 This repository contains Python Class Homeworks, Challenge Activities, Fun Games and Pop-up Quizes.
-** Class Teachers: Milind Patel and Jaymin Patel
+**Class Teachers: Milind Patel and Jaymin Patel.
 - Reference Book: [Coding for Kids: Python: Learn to Code with 50 Awesome Games and Activities](https://www.amazon.com/Coding-Kids-Python-Awesome-Activities/dp/1641521759)
 - Author: ADRIENNE B. TACKE
 
@@ -31,10 +31,13 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - Use `-` for bullet points.
 - Use `[Link Text](url)` for links.
 - Use triple backticks (\`\`\`) for code blocks, specifying the language for syntax highlighting.
-- For Table Creation
-|Step | Command | Purpose |
-|-----|---------|---------|
-|Update remotes | git fetch origin | Get latest remote changes |
+- For Table Creation.
+
+| Command | Example | Output |
+|---------|---------|--------|
+|print() | print("Hello, World!") | Hello, World! |
+|len() | print(len("Python")) | 6 |
+
 
 ---
 
