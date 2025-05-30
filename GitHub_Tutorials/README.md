@@ -54,6 +54,24 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 
 ---
 
+## Merge a Branch
+- When to merge your branch? You should merge a branch into main when the work on that branch is complete, tested, reviewed and ready for release.
+
+**On Windows Command Prompt**
+- `git fetch origin` &mdash; Fetch the latest changes from the remote repository to make sure you’re working with the most up-to-date code. This updates your local view of all branches, including main
+- `git switch main` &mdash; You need to be on the branch you want to merge into (usually main). Use [git checkout main] for advanced operations, like checking out files or commits, or if you are on an older Git version.
+- `git pull origin main` &mdash; Pull the latest changes from the remote main branch to ensure your main is current. This prevents conflicts that may arise from other people’s changes.
+- `git merge --no-ff "new_tutorial_create_a_branch"` &mdash; Merge your branch into main and create a merge commit, This command combines the changes from feature-branch into main. If there are no conflicts, Git will create a new merge commit.
+- You may run into merge conflict where overlapping changes in same file/line conflict with each other. In such case manually resolve conflict and commit changes.
+- `git add <resolved-files>` &mdash; In case of merge conflict: Stage your Updated  files for commit.
+- `git commit -m "..."` &mdash; In case of merge conflict: Commit your changes with a message.
+
+- `git push origin main` &mdash; Update the remote main branch with your merged changes, IMPORTANT: This makes your changes visible to everyone.
+- `git branch -d feature-branch` &mdash; (Optional) Delete your feature branch locally to reduce number of branch maintainance.
+- `git push origin --delete feature-branch` &mdash; (Optional) Delete your feature branch remotely to reduce number of branch maintainance.
+
+
+---
 ## Markdown Tips
 
 - Use `#` for main headings.
