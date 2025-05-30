@@ -46,12 +46,16 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 
 **On Windows Command Prompt**
 - `git checkout -b "new_tutorial_create_a_branch"` &mdash; Give Branch Name - No Space, use - or _ in name.
+- `git branch` &mdash; To find out local branches
+- `git branch -r` &mdash; To find out remote branches
 - Make needed changes to files in your branch and save
 - `git add .` &mdash; Stage your Updated  files for commit. [git add .]:All changes in current directory and below, [git add -A]:All changes in the entire repository
 - `git commit -m "Add new Create a Branch Tutorial"` &mdash; Commit your changes with a message.
 - `git push -u origin "new_tutorial_create_a_branch"` &mdash; Push my local branch named new-feature to the remote repository named origin.
-
-
+- `git branch` &mdash; To find out local branches
+- `git branch -r` &mdash; To find out remote branches
+- `git branch` &mdash; To find out local branches
+- `git branch -r` &mdash; To find out remote branches
 ---
 
 ## Merge a Branch
