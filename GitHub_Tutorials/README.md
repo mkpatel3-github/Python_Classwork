@@ -56,6 +56,7 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `git branch -r` &mdash; To find out remote branches
 - `git branch` &mdash; To find out local branches
 - `git branch -r` &mdash; To find out remote branches
+- `git branch -a` &mdash; To see a combined list of all local and remote branches
 ---
 
 ## Merge a Branch
@@ -66,6 +67,7 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `git switch main` &mdash; You need to be on the branch you want to merge into (usually main). Use [git checkout main] for advanced operations, like checking out files or commits, or if you are on an older Git version.
 - `git pull origin main` &mdash; Pull the latest changes from the remote main branch to ensure your main is current. This prevents conflicts that may arise from other people’s changes.
 - `git merge --no-ff "new_tutorial_create_a_branch"` &mdash; Merge your branch into main and create a merge commit, This command combines the changes from feature-branch into main. If there are no conflicts, Git will create a new merge commit.
+
 - You may run into merge conflict where overlapping changes in same file/line conflict with each other. In such case manually resolve conflict and commit changes.
 - `git add <resolved-files>` &mdash; In case of merge conflict: Stage your Updated  files for commit.
 - `git commit -m "..."` &mdash; In case of merge conflict: Commit your changes with a message.
@@ -74,6 +76,18 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `git branch -d feature-branch` &mdash; (Optional) Delete your feature branch locally to reduce number of branch maintainance.
 - `git push origin --delete feature-branch` &mdash; (Optional) Delete your feature branch remotely to reduce number of branch maintainance.
 
+- If you want to undo a deleted branch in Git as long as the commits from that branch still exist in your repository history and have not been garbage collected, You can immediately restore it. When you delete a branch, Git usually prints a message like:
+- `Deleted branch <your-branch> (was <sha>)` &mdash; 
+- `git checkout -b <your-branch> <sha>` &mdash; Replace <your-branch> with the branch name and <sha> with the commit hash shown in the message.
+
+- If you don’t have the SHA: Use the reflog to find the commit where your branch was last pointing. 
+-`git reflog` &mdash; Look for an entry like: HEAD@{n}: branch: Deleted branch <your-branch> (was <sha>) Then recreate the branch:
+-`git checkout -b <your-branch> <sha>` &mdash; This will recreate branch.
+-`git checkout -b <your-branch> HEAD@{n}` &mdash; - Or, if you want to use the reflog reference directly:
+
+- If the branch was deleted from the remote (e.g., GitHub) but you still have the commits locally, you can recreate and push it:
+-`git checkout -b <your-branch> <sha>'
+-`git push -u origin <your-branch>'
 
 ---
 ## Markdown Tips
