@@ -1,0 +1,10 @@
+Read Chapter 2 (Up to page 60)
+Write code for below activities. Please upload the code and screenshot of execution and turn in your work.  Please attach one google doc for each activity and coding assignment for quick review. 
+Activity 1: Introduce yourself
+Activity 2: TO QUOTE A QUOTE
+Activity 3: MOOD IS VARIABLE
+Activity 4: HAIKU, ABOUT YOU
+Activity 5: SILLY STORIES
+Activity 6: REUSABLE VARIABLES
+Activity 7: BETTER VARIABLE NAMES
+Coding assignment: MULTILAYER CAKE
