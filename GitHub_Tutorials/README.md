@@ -71,6 +71,36 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `git push origin --delete feature-branch` &mdash; (Optional) Delete your feature branch remotely to reduce number of branch maintainance.
 
 
+**Summary Table : Command Sequence**
+|Step | Command | Purpose |
+|-----|---------|---------|
+|Update remotes | git fetch origin | Get latest remote changes |
+|Switch to main | git checkout main | Prepare to merge into main |
+|Update local main | git pull origin main | Ensure main is up-to-date |
+|Merge feature branch | git merge feature-branch | Combine your changes into main |
+|Resolve conflicts | Edit files, git add, git commit | If Git can’t merge automatically |
+|Push main to remote | git push origin main | Share merged changes |
+|Delete feature branch | git branch -d feature-branch | Clean up local branches |
+
+---
+
+## Switch Between a Branch
+- When you need to switch between Branches to complete your work, you can do so following these commands. Remember to save your work on current branch.
+**On Windows Command Prompt**
+- `git branch` &mdash; List all available local branches
+- `git switch main` &mdash; switch to main or your desired branch. 
+
+- If you have uncommitted changes that conflict with files on main, Git may prevent you from switching branches. In that case, you should either: Commit your changes, Stash them with [git stash], or Discard them if you don’t need them
+-`git stash save "meaningful description"` &mdash; Always recommended to save stash with meaningful messaeg
+- When you run [git stash save "message"], Git stores your changes in a special local stack and reverts your working directory to the last committed state, making it clean for new tasks.
+-`git stash list` &mdash; This shows all your stashes, with the most recent as stash@{0}, the next as stash@{1}, and so on
+- You can later restore your stashed changes with [git stash apply] (which keeps the stash in the stack) or [git stash pop] (which restores and removes the stash from the stack in case only one stash saved)
+- By default, [git stash] stashes only tracked files, but you can include untracked/new files with [git stash -u]
+-`git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number
+
+ 
+
+
 ---
 ## Markdown Tips
 
