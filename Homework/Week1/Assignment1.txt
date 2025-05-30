@@ -1,0 +1,2 @@
+1. Finish reading chapter 1(Page 14 to 35)
+2. Install VSCode and Python and learn how to use VSCode to create a file, run the program etc
