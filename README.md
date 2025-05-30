@@ -35,8 +35,8 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 
 | Command | Example | Output |
 |---------|---------|--------|
-|print() | print("Hello, World!") | Hello, World! |
-|len() | print(len("Python")) | 6 |
+| print() | print("Hello, World!") | Hello, World! |
+| len() | print(len("Python")) | 6 |
 
 
 ---
