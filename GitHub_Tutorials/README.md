@@ -99,12 +99,12 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - `git branch` &mdash; List all available local branches
 - `git switch main` &mdash; switch to main or your desired branch. 
 - If you have uncommitted changes that conflict with files on main, Git may prevent you from switching branches. In that case, you should either: Commit your changes, Stash them with [git stash], or Discard them if you don’t need them.
--`git stash save "meaningful description"` &mdash; Always recommended to save stash with meaningful message.
+- `git stash save "meaningful description"` &mdash; Always recommended to save stash with meaningful message.
 - When you run [git stash save "message"], Git stores your changes in a special local stack and reverts your working directory to the last committed state, making it clean for new tasks.
--`git stash list` &mdash; This shows all your stashes, with the most recent as stash@{0}, the next as stash@{1}, and so on.
+- `git stash list` &mdash; This shows all your stashes, with the most recent as stash@{0}, the next as stash@{1}, and so on.
 - You can later restore your stashed changes with [git stash apply] (which keeps the stash in the stack) or [git stash pop] (which restores and removes the stash from the stack in case only one stash saved).
 - By default, [git stash] stashes only tracked files, but you can include untracked/new files with [git stash -u].
--`git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number.
+- `git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number.
 
 ---
 
@@ -118,20 +118,20 @@ git fetch origin
 git pull origin main
 ```
 - Identify the commit you want to cherry-pick by viewing the log of the source branch.
--`git log origin/source-branch --oneline` &mdash; Find Commit ID (i.e abc1234) you want to pull.
+- `git log origin/source-branch --oneline` &mdash; Find Commit ID (i.e abc1234) you want to pull.
 - Make sure you are on correct branch or main where you want to apply the change.
--`git checkout main`
+- `git checkout main`
 - NOTE: Below command will merge, add and commit changes.
--`git cherry-pick abc1234` &mdash; Apply abc1234 to main (Relpace abc1234 with correct commit ID).If you want to cherry-pick multiple commits, you can list their hashes: [git cherry-pick abc1234 def5678] Or cherry-pick a range: [git cherry-pick abc1234...ghi7890]
+- `git cherry-pick abc1234` &mdash; Apply abc1234 to main (Relpace abc1234 with correct commit ID).If you want to cherry-pick multiple commits, you can list their hashes: [git cherry-pick abc1234 def5678] Or cherry-pick a range: [git cherry-pick abc1234...ghi7890]
 - If there are conflicts, Git will pause and ask you to resolve them. After resolving conflict manually, continue: 
 ```
 git add <resolved-files>
 git cherry-pick --continue
 ```
 - After cherry-picking, push your updated changes to remote.
--`git push origin main` &mdash; Pushes your changes to Remote.
+- `git push origin main` &mdash; Pushes your changes to Remote.
 If you want to apply the changes for experimentation but not commit right away, use the --no-commit (or -n) option. 
--`git cherry-pick -n abc1234`
+- `git cherry-pick -n abc1234`
 - Later you may [git add .,git commit -m "..."] to commit merged changes. Or discard the staged and working directory changes [git reset --hard].
 
 **Summary Table**
@@ -148,10 +148,10 @@ If you want to apply the changes for experimentation but not commit right away, 
 ## Revert Changes
 - As you saw in previous section, if you want to revert changes during cherry-pick or post merge, use [git reset --hard  or gitreset --hard Head~1] options. This will reset full branch.
 - You can use [git restore] to bring back the file from a specific commit, without affecting the rest of your branch.
--`git restore --source=<commit-id> -- path/to/your/file` &mdash; pick commit-id you want file to be restored. Give relative path if working from home directory, or file name if working from current directory.
+- `git restore --source=<commit-id> -- path/to/your/file` &mdash; pick commit-id you want file to be restored. Give relative path if working from home directory, or file name if working from current directory.
 - Don't forget to add file [git add path/to/your/file] and commit file [git commit -m "Restore file to state from <commit-id>"]
 - If you want to undo all changes made by a specific commit (not just one file), use git revert.
--`git revert <commit-id>` &mdash; This creates a new commit that undoes the changes from the specified commit, keeping your history safe.
+- `git revert <commit-id>` &mdash; This creates a new commit that undoes the changes from the specified commit, keeping your history safe.
 
 ---
 ## Markdown Tips
