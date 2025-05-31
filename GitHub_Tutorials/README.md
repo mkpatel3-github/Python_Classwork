@@ -10,6 +10,8 @@ This repository contains Python classwork and tutorials for learning and teachin
   - [Create a Branch](#create-a-branch)
   - [Merge a Branch](#merge-a-branch)
   - [Switch Between Branches](#switch-between-branches)
+  - [Cherry Pick Changes](#cherry-pick-changes)
+  - [Revert Changes](#revert-changes)
 ---
 
 ## Cloning the Repository
@@ -103,6 +105,53 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - You can later restore your stashed changes with [git stash apply] (which keeps the stash in the stack) or [git stash pop] (which restores and removes the stash from the stack in case only one stash saved).
 - By default, [git stash] stashes only tracked files, but you can include untracked/new files with [git stash -u].
 -`git stash apply stash@{2}  or  git stash pop stash@{2}` &mdash; Replace 2 with the appropriate stash number.
+
+---
+
+## Cherry Pick Changes
+- When you want to selectively pick changes from someone to your branch or your main, you perform this actions. 
+- Be careful as default options merges the cherry picked changes and adds them and commits to your existing work.
+- First ensure your main is upto date. This will bring your local main branch up to date with the remote main branch, incorporating any new commits or changes that have been made by others.
+-```
+git switch main  or  git checkout main
+git fetch origin
+git pull origin main
+```
+- Identify the commit you want to cherry-pick by viewing the log of the source branch.
+-`git log origin/source-branch --oneline` &mdash; Find Commit ID (i.e abc1234) you want to pull.
+- Make sure you are on correct branch or main where you want to apply the change.
+-`git checkout main`
+- NOTE: Below command will merge, add and commit changes.
+-`git cherry-pick abc1234` &mdash; Apply abc1234 to main (Relpace abc1234 with correct commit ID).If you want to cherry-pick multiple commits, you can list their hashes: [git cherry-pick abc1234 def5678] Or cherry-pick a range: [git cherry-pick abc1234...ghi7890]
+- If there are conflicts, Git will pause and ask you to resolve them. After resolving conflict manually, continue: 
+```
+git add <resolved-files>
+git cherry-pick --continue
+```
+- After cherry-picking, push your updated changes to remote.
+-`git push origin main` &mdash; Pushes your changes to Remote.
+If you want to apply the changes for experimentation but not commit right away, use the --no-commit (or -n) option. 
+-`git cherry-pick -n abc1234`
+- Later you may [git add .,git commit -m "..."] to commit merged changes. Or discard the staged and working directory changes [git reset --hard].
+
+**Summary Table**
+| Action | Command |
+|--------|---------|
+|Cherry-pick and commit immediately	| git cherry-pick abc1234 |
+|Cherry-pick without committing	| git cherry-pick -n abc1234 |
+|Discard uncommitted cherry-pick changes (-n option only) | git reset --hard |
+|Undo a cherry-pick commit | git reset --hard HEAD~1 |
+|Abort ongoing cherry-pick (with conflict) | git cherry-pick --abort |
+
+---
+
+## Revert Changes
+- As you saw in previous section, if you want to revert changes during cherry-pick or post merge, use [git reset --hard  or gitreset --hard Head~1] options. This will reset full branch.
+- You can use [git restore] to bring back the file from a specific commit, without affecting the rest of your branch.
+-`git restore --source=<commit-id> -- path/to/your/file` &mdash; pick commit-id you want file to be restored. Give relative path if working from home directory, or file name if working from current directory.
+- Don't forget to add file [git add path/to/your/file] and commit file [git commit -m "Restore file to state from <commit-id>"]
+- If you want to undo all changes made by a specific commit (not just one file), use git revert.
+-`git revert <commit-id>` &mdash; This creates a new commit that undoes the changes from the specified commit, keeping your history safe.
 
 ---
 ## Markdown Tips
