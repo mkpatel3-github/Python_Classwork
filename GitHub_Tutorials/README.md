@@ -112,7 +112,7 @@ git clone https://github.com/mkpatel3-github/Python_Classwork
 - When you want to selectively pick changes from someone to your branch or your main, you perform this actions. 
 - Be careful as default options merges the cherry picked changes and adds them and commits to your existing work.
 - First ensure your main is upto date. This will bring your local main branch up to date with the remote main branch, incorporating any new commits or changes that have been made by others.
--```
+```
 git switch main  or  git checkout main
 git fetch origin
 git pull origin main
