@@ -53,11 +53,7 @@ Team members merge their feature branches into `main` (or a development branch) 
 
 ## Common Scenario: Verify a Team Member’s PR
 
-How to fetch and check out a team member’s Pull Request (PR) locally, especially when you are already working on your feature branch:
-    ```
-    git fetch origin pull/123/head:pr-123
-    git checkout pr-123
-    ```
+**Fetch and check out a team member’s Pull Request (PR)**
 - `git fetch origin pull/123/head:pr-123`: Downloads the changes from PR #123 on the remote (`origin`) and creates a new local branch called `pr-123` with those changes. It does not affect your current branch.
 - `git checkout pr-123`: Switches your working directory to the new local branch `pr-123`, so you can review, test, or work with the PR code.
 
