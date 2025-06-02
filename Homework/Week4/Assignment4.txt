@@ -1,0 +1,69 @@
+1. Name Fun
+
+
+Write a program that asks the user for their name and prints it:
+In
+In
+In
+Expected output:
+Enter your name: Alice  
+Uppercase: ALICE  
+Lowercase: alice  
+Reversed: ecilA
+
+Note: You can use input for reading input from the user and use string functions.
+
+2.  Secret Word Scrambler  
+ Write a program that asks the user for a word and scrambles it by displaying:
+The first and last letter
+The word backward
+Sample output: 
+Enter a word: Python  
+First letter: P  
+Last letter: n  
+Scrambled word: nohtyP  
+
+Note: You can use word1[0] to get first character, word1[-1 to get last character and word1[::-1] to reverse the string
+
+
+3. Favorite Things list
+
+Write a program that asks the user for and then ask for their choice number and display item matching with their preference
+The first favorite thing
+The second favorite thing
+The last favorite thing
+Sample output: 
+Enter your first favorite thing: Ice Cream  
+Enter your second favorite thing: Video Games  
+Enter your third favorite thing: Basketball  
+
+Which item would you like to print?: 1
+Your 1 favorite thing is Ice Cream.
+
+4. Name Length Checker  
+  Write a program that asks the user for their name and tells them how many letters it has.
+
+Note: research and use built in string function to get length
+
+Sample Oputput:
+Enter your name: Jonathan  
+Your name has 8 letters.  
+
+5. 
+
+Superhero Name Maker
+
+  Write a program that asks the user for their and . Then, combine them to create a superhero name!
+
+Sample Output: 
+Enter your favorite color: Red  
+Enter your favorite animal: Falcon  
+Your superhero name is: Red Falcon!  
+
+Note: Please use built in way to combine two strings.
+0
+Turned in
+0
+Assigned
+7
+Graded
