@@ -6,6 +6,26 @@ Branches are for teams where all members have write access to the same repositor
 
 ---
 
+# Table of Contents
+
+- [Working as a Team with Branches](#working-as-a-team-with-branches)
+  - [Team Project: Create a PR from Your Branch](#team-project-create-a-pr-from-your-branch)
+  - [Common Scenario: Verify a Team Member’s PR](#common-scenario-verify-a-team-members-pr)
+  - [Common Scenario: Combine a Friend's PR with Your Feature Branch](#common-scenario-combine-a-friends-pr-with-your-feature-branch)
+  - [Summary Table](#summary-table)
+- [How to Update a Pull Request (PR) After Receiving Feedback](#how-to-update-a-pull-request-pr-after-receiving-feedback)
+  - [Step-by-Step: Update Your PR After Feedback](#step-by-step-update-your-pr-after-feedback)
+    - [1. Ensure You’re on the Correct Branch](#1-ensure-youre-on-the-correct-branch)
+    - [2. Pull Latest Changes (Optional but Recommended)](#2-pull-latest-changes-optional-but-recommended)
+    - [3. Make the Required Changes](#3-make-the-required-changes)
+    - [4. Stage and Commit Your Changes](#4-stage-and-commit-your-changes)
+    - [5. Push Your Changes to the Same Branch](#5-push-your-changes-to-the-same-branch)
+    - [6. Your PR is Automatically Updated](#6-your-pr-is-automatically-updated)
+  - [Summary Table](#summary-table-1)
+  - [Extra Tips](#extra-tips)
+
+---
+
 ## Team Project: Create a PR from Your Branch
 
 **Small Teams (All Have Write Access) – Branch-Based Workflow**
