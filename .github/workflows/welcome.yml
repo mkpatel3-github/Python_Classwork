@@ -1,0 +1,20 @@
+name: Welcome New Students
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🎉 Welcome to Python Classwork! Thank you for submitting your first pull request. Our instructors will review your work soon. Keep up the great work! 🌟'
+            })
