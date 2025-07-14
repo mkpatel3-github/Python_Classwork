@@ -12,13 +12,25 @@ This repository contains Python programming exercises, collaborative projects, a
 
 ## 📚 Repository Structure
 
-Python_Classwork/
-├── 📁 Homework/ # Weekly individual assignments
-├── 📁 GitHub_Tutorials/ # Git and GitHub learning materials
-├── 📁 Collaborative_Projects/ # Team programming projects
-├── 📁 Resources/ # Reference materials and guides
-├── 📁 Student_Work/ # Student submission area
-└── 📁 Templates/ # Project and assignment templates
+    Python_Classwork/
+    ├── 📁 Homework/              # Weekly individual assignments
+    │   ├── Week1/
+    │   │   └── Assignment1.txt
+    │   ├── Week2/
+    │   │   └── Assignment2.txt
+    │   ├── Week3/
+    │   │   └── Assignment3.txt
+    │   └── Week4/
+    │       └── Assignment4.txt
+    ├── 📁 GitHub_Tutorials/      # Git and GitHub learning materials
+    │   ├── README.md
+    │   └── CaseStudy.md
+    ├── 📁 Collaborative_Projects/ # Team programming projects
+    ├── 📁 Resources/             # Reference materials and guides
+    ├── 📁 Student_Work/          # Student submission area
+    ├── 📁 Templates/             # Project and assignment templates
+    └── 📄 README.md
+
 
 ## 👨‍🏫 Course Information
 
