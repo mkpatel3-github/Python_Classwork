@@ -11,7 +11,7 @@
 This repository contains Python programming exercises, collaborative projects, and GitHub tutorials designed specifically for 5th-7th grade students. Students will learn both Python programming fundamentals and essential software development collaboration skills using Git and GitHub.
 
 ## 📚 Repository Structure
-
+```
     Python_Classwork/
     ├── 📁 Homework/              # Weekly individual assignments
     │   ├── Week1/
@@ -31,7 +31,7 @@ This repository contains Python programming exercises, collaborative projects, a
     ├── 📁 Templates/             # Project and assignment templates
     └── 📄 README.md
 
-
+```
 ## 👨‍🏫 Course Information
 
 - **Instructors:** Milind Patel and Jaymin Patel

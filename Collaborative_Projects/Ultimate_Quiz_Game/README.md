@@ -87,7 +87,7 @@ Each team member will earn badges for completing their component:
 - **🎯 Integration Hero** - Successfully coordinate all components
 
 ## 📁 Project Structure
-
+```
 Ultimate_Quiz_Game/
 ├── src/
 │ ├── main_game.py # Student 7: Game Controller
@@ -110,7 +110,7 @@ Ultimate_Quiz_Game/
 │ ├── user_manual.md
 │ └── development_log.md
 └── README.md
-
+```
 
 ## 🎓 Learning Outcomes
 
